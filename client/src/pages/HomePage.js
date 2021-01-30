@@ -18,7 +18,10 @@ function HomePage() {
 
   if (loading) {
     return (
-      <header>Phone catalog</header>
+      <React.Fragment>
+        <header>Phone catalog</header>
+        <h1>Loading...</h1>
+      </React.Fragment>
     )
   }
   return (
