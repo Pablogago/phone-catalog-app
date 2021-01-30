@@ -21,3 +21,4 @@ Orchestrated using docker-compose.
   docker-compose up
   ```
 
+Go to http://locahost:3000
