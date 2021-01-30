@@ -1,0 +1,99 @@
+.go-back-icon {
+  fill: #fffffff0;
+  margin-right: 20px;
+}
+
+.header-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.phonepage {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.phonepage__box {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.phonepage__img {
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 44%);
+}
+.phonepage__specsBox {
+  width: 100%;
+}
+.phonepage__specsBox > h1 {
+  text-align: center;
+  padding-bottom: 25px;
+  margin-bottom: 0;
+  border-bottom: 1px solid lightgray;
+}
+.phonepage__backButton {
+  display: flex;
+  width: fit-content;
+  margin: 20px auto;
+}
+.phonepage__specsBox > a {
+  display: flex;
+  justify-content: center;
+
+}
+.phonepage__specsBox > a > svg {
+  width: 60px;
+}
+.phonepage__specsBox > p {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid lightgray;
+}
+.phonepage__specs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-phone-button {
+  position: absolute;
+  right: 0;
+  background: #e91e63;
+  width: 90px;
+  padding: 8px 0;
+  color: #ffffffe0;
+}
+
+@media only screen and (max-width: 733px) {
+  .phonepage__img {
+    align-self: center;
+    width: 95%;
+  }
+  .phonepage__specsBox {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .phonepage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

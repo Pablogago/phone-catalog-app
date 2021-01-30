@@ -1,0 +1,44 @@
+
+### Get All Phones
+# @name phonesRequest
+GET http://localhost:5000/phones
+
+###
+
+@id = {{phonesRequest.response.body.$.[0]._id}}
+
+### Get one phone
+GET http://localhost:5000/phones/{{id}}
+
+### Missing phone
+GET http://localhost:5000/phones/58989asdf
+
+### Edit Phone
+PATCH http://localhost:5000/phones/{{id}}
+Content-Type: application/json
+
+{
+    "name": "Jamon 9",
+    "price": 200,
+    "description": "lorem ipsum dolor sit amet consectetur."
+}
+
+
+### Delete Phone
+DELETE http://localhost:5000/phones/{{id}}
+
+### Create Phone
+POST http://localhost:5000/phones
+Content-Type: application/json
+
+{
+    "name": "Jamon 7",
+    "manufacturer": "Apple",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "black",
+    "price": 769,
+    "imageFileName": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-7-1.jpg",
+    "screen": "4,7 inch IPS",
+    "processor": "A10 Fusion",
+    "ram": 2
+}
